@@ -1,0 +1,21 @@
+/*Javascript code practiced on 03/04/2020 on Functions*/
+/*Program on javascript functions declaring local variables*/
+<!DOCTYPE html>
+<html>
+<body>
+<h3>JavaScript Functions</h3>
+<p id="js1"></p>
+<p id="js2"></p>
+<script>
+fun();  //Function call
+function fun() //Function definition
+{
+  var Name = "Prabhu"; //Local variable, accessed inside function only.
+  document.getElementById("js1").innerHTML = "Accessed inside the function: " +
+  typeof Name + " " + Name;
+}
+document.getElementById("js2").innerHTML = "Accessed outside the function: " +
+typeof Name;  //No variable declare so undefined is printed.
+</script>
+</body>
+</html>
