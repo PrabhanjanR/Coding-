@@ -1,0 +1,17 @@
+/*Javascript code practiced on 07/04/2020 on String Methods*/
+/*Program to replace a string content*/
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript String Methods</h2>
+<button onclick="func()">Try it</button>
+<p id="js">Please visit LG</p>
+<script>
+function func() {
+  var s = document.getElementById("js").innerHTML; 
+  var s1 = s.replace("LG","LGSI"); //Here we are replacing a string LG by LGSI
+  document.getElementById("js").innerHTML = s1;
+}
+</script>
+</body>
+</html>
