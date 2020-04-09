@@ -1,0 +1,20 @@
+/*Javascript code practiced on 09/04/2020 on Number Method*/
+/*Program on positive and negative infinity Method*/
+<!DOCTYPE html>
+<html>
+<body>
+<h4>JavaScript Number Object Properties</h4>
+<p id="js"></p>
+<script>
+var x = Number.POSITIVE_INFINITY;
+var y = 1 / 0;
+var z = Number.NEGATIVE_INFINITY;
+var n = -1 / 0;
+document.getElementById("js").innerHTML = "Positive infinity: " + x  + "<br>" +
+                             "1/0 value: " + y + "<br>" + 
+                             "Negative Infinity: " + z + "<br>" +
+                             "-1/0: " + n + "<br>" + 
+                             "Not a number: " + Number.NaN;
+</script>
+</body>
+</html>
