@@ -1,0 +1,19 @@
+/*Javascript code practiced on 14/04/2020 on Array Methods*/
+/*Program on pushing elements to array*/
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Array Methods</h2>
+<button onclick="fun()">Click!</button>
+<p id="js1"></p>
+<p id="js2"></p>
+<script>
+var languages = ["Kannada ", " English ", " Tamil ", " Telugu "];
+document.getElementById("js1").innerHTML = languages;
+function fun() {
+  document.getElementById("js2").innerHTML = languages.push(" Hindi ");
+  document.getElementById("js1").innerHTML = languages;
+}
+</script>
+</body>
+</html>

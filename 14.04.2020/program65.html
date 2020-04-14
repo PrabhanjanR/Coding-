@@ -1,0 +1,19 @@
+/*Javascript code practiced on 14/04/2020 on Array Methods*/
+/*Program on splicing an array*/
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Array Methods</h2>
+<button onclick="func()">Click!</button>
+<p id="js1"></p>
+<p id="js2"></p>
+<script>
+var colors = [" Black ", " White ", " Red ", " Pink "];
+document.getElementById("js1").innerHTML = "Original Array:<br>" + colors;
+function func() {
+  colors.splice(2, 0, " Blue ", " Grey ");
+  document.getElementById("js2").innerHTML = "New Array:<br>" + colors;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+/*Javascript code practiced on 14/04/2020 on Array Methods*/
+/*Program on adding and deleting elements*/
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Array Methods</h2>
+<button onclick="fun1()">Click to add</button>
+<button onclick="fun2()">Click to delete</button>
+<p id="js1"></p>
+<p id="js2"></p>
+<p id="js3"></p>
+<script>
+var colors = [" Black ", " White ", " Red ", " Pink "];
+document.getElementById("js1").innerHTML = colors;
+function fun1() 
+{
+  colors[colors.length] = " Violet ";
+  document.getElementById("js1").innerHTML = colors;
+}
+function fun2()
+{
+    document.getElementById("js2").innerHTML =
+    "Before Deleting -->The first color is: " + colors[0];
+    delete colors[0];
+    document.getElementById("js3").innerHTML = 
+    "After Deleting --> The first color is: " + colors[0];
+}
+</script>
+</body>
+</html>
