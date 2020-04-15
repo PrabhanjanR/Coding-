@@ -1,0 +1,23 @@
+/*Javascript code practiced on 15/04/2020 on Array Sort*/
+/*Program on finding minimum and maximum number using math function*/
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Array Sort</h2>
+<p id="js1"></p>
+<p id="js2"></p>
+<script>
+var num = [40, 100, 1, 5, 25, 10];
+document.getElementById("js1").innerHTML = "Highest number is " + Max(num);
+function Max(arr) 
+{
+  return Math.max.apply(null, arr);
+}
+document.getElementById("js2").innerHTML = "Lowest number is " +  Min(num);
+function Min(arr) 
+{
+  return Math.min.apply(null, arr);
+}
+</script>
+</body>
+</html>

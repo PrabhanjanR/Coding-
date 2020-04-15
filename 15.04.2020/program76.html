@@ -1,0 +1,26 @@
+/*Javascript code practiced on 15/04/2020 on Array Sorting*/
+/*Program on sorting object arrays.*/
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Array Sort</h2>
+<button onclick="fun()">Sort</button>
+<p id="js"></p>
+<script>
+var v = [ {Name:"Prabhanjan", year:1997},
+         {Name:"Kusuma", year:2010},
+         {Name:"Priyanka", year:2002} ];
+display();
+function fun() {
+  v.sort(function(a, b){return a.year - b.year});
+  display();
+}
+function display() {
+  document.getElementById("js").innerHTML =
+  v[0].Name + " " + v[0].year + "<br>" +
+  v[1].Name + " " + v[1].year + "<br>" +
+  v[2].Name + " " + v[2].year;
+}
+</script>
+</body>
+</html>

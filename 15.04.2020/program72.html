@@ -1,0 +1,23 @@
+/*Javascript code practiced on 15/04/2020 on Array Sort*/
+/*Program on compare function*/
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Array Sort</h2>
+<button onclick="fun1()">Sort Alphabetically</button>
+<button onclick="fun2()">Sort Numerically</button>
+<p id="js"></p>
+<script>
+var num = [40 , 100 , 1 , 5 , 25 , 10 ];
+document.getElementById("js").innerHTML = num;  
+function fun1() {
+  num.sort();
+  document.getElementById("js").innerHTML = num;
+}
+function fun2() {
+  num.sort(function(a, b){return a - b});
+  document.getElementById("js").innerHTML = num;
+}
+</script>
+</body>
+</html>
