@@ -1,0 +1,18 @@
+/*Javascript code practiced on 16/04/2020 on Array Iteration*/
+/*Program on array.reduceRight().*/
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Array.reduceRight()</h2>
+<p id="js"></p>
+<script>
+var num = [5, 14, 09, 26, 35];
+var sum = num.reduceRight(fun);
+document.getElementById("js").innerHTML = "The sum is " + sum;
+function fun(total, value, index, array) 
+{
+  return total + value;
+}
+</script>
+</body>
+</html>

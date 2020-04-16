@@ -1,0 +1,18 @@
+/*Javascript code practiced on 16/04/2020 on Array Iteration*/
+/*Program on array.filter().*/
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Array.filter()</h2>
+<p id="js"></p>
+<script>
+var num = [5, 14, 09, 26, 35];
+var v = num.filter(fun);
+document.getElementById("js").innerHTML = v;
+function fun(value, index, array) 
+{
+  return value > 20; //filters the number less than 20.
+}
+</script>
+</body>
+</html>

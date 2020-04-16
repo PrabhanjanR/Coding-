@@ -1,0 +1,18 @@
+/*Javascript code practiced on 16/04/2020 on Array Iteration*/
+/*Program on array.find().*/
+<!DOCTYPE html>
+<html>
+<body>
+<h3>JavaScript Array.find()</h3>
+<p id="js"></p>
+<script>
+var num = [4, 9, 29, 26, 35];
+var f = num.find(fun);
+document.getElementById("js").innerHTML = "First number over 25 is " + f;
+function fun(value, index, array) 
+{
+  return value > 25;
+}
+</script>
+</body>
+</html>

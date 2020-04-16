@@ -1,0 +1,18 @@
+/*Javascript code practiced on 16/04/2020 on Array Iteration*/
+/*Program on array.every().*/
+<!DOCTYPE html>
+<html>
+<body>
+<h3>JavaScript Array.every()</h3>
+<p id="js"></p>
+<script>
+var num = [5, 32, 15, 48, 25];
+var n = num.every(fun);
+document.getElementById("js").innerHTML = "All over 4 is " + n;
+function fun(value, index, array) 
+{
+  return value > 4;
+}
+</script>
+</body>
+</html>
