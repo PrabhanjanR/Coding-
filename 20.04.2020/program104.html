@@ -1,0 +1,31 @@
+/*Javascript code practiced on 20/04/2020 on Boolean object*/
+/*Program on else if condition*/
+<!DOCTYPE html>
+<html>
+<body>
+<br>
+<br>
+<button onclick="fun()">Click!</button>
+<p id="js"></p>
+<script>
+function fun() 
+{
+  var Time = 15;
+  var greeting;
+  if (Time < 10) 
+  {
+    greeting = "Good morning";
+  } 
+  else if (Time < 20) 
+  {
+    greeting = "Good day";
+  } 
+  else 
+  {
+    greeting = "Good evening";
+  }
+  document.getElementById("js").innerHTML = greeting;
+}
+</script>
+</body>
+</html>

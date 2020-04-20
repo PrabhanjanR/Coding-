@@ -1,0 +1,25 @@
+/*Javascript code practiced on 20/04/2020 on Boolean object*/
+/*Program to boolean value is true or false*/
+<!DOCTYPE html>
+<html>
+<body>
+<p id="js"></p>
+<script>
+var x1 = Boolean(3.14);
+var x2 = Boolean(-15);
+var x3 = Boolean("Hello");
+var x4 = Boolean('false');
+var x5=0;
+var x6 = Boolean(x5);
+var x7;
+var x8 = Boolean(x7);
+document.getElementById("js").innerHTML =
+"3.14 is " + x1 + "<br>" +
+"-15 is " + x2 + "<br>" +
+"String is " + x3 + "<br>" +
+"Even the string 'false' is " + x4 + "<br>" +
+"Zero is " + x6 + "<br>" +
+"Undefined variable is " + x8;
+</script>
+</body>
+</html>

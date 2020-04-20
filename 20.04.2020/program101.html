@@ -1,0 +1,22 @@
+/*Javascript code practiced on 20/04/2020 on Boolean object*/
+/*Program to compare less than or greater than.*/
+<!DOCTYPE html>
+<html>
+<body>
+<br>
+<br>
+<input id="age" value="18"/>
+<br>
+<button onclick="fun()">Click</button>
+<p id="js"></p>
+<script>
+function fun() 
+{
+  var age, vote;
+  age = document.getElementById("age").value;
+  vote = (age < 18) ? "Too young":"Old enough";
+  document.getElementById("js").innerHTML = vote + " to vote.";
+}
+</script>
+</body>
+</html>
