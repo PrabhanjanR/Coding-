@@ -1,0 +1,23 @@
+/*Javascript code practiced on 21/04/2020 on Switch statements*/
+/*Program on switch cases with default*/
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript switch statement</h2>
+<p id="js"></p>
+<script>
+var msg;
+switch (new Date().getDay()) {
+  case 6:
+    msg = "Today is Saturday";
+    break;
+  case 0:
+    msg = "Today is Sunday";
+    break;
+  default:
+    msg = "Looking for Weekend";
+}
+document.getElementById("js").innerHTML = msg;
+</script>
+</body>
+</html>
