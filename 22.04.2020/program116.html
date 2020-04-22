@@ -1,0 +1,22 @@
+/*Javascript code practiced on 22/04/2020 on break labels*/
+/*Program on break labels*/
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript break</h2>
+<p id="js"></p>
+<script>
+var colors = ["Black", "Red", "White", "Blue"];
+var v = "";
+list: 
+{
+  v += colors[0] + "<br>"; 
+  v += colors[1] + "<br>"; 
+  break list;
+  v += colors[2] + "<br>"; 
+  v += colors[3] + "<br>"; 
+}
+document.getElementById("js").innerHTML = v;
+</script>
+</body>
+</html>

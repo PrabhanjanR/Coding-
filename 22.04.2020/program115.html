@@ -1,0 +1,22 @@
+/*Javascript code practiced on 22/04/2020 on continue statement*/
+/*Program on continue statement*/
+<!DOCTYPE html>
+<html>
+<body>
+<h3>JavaScript Loops</h3>
+<p id="js"></p>
+<script>
+var v = "";
+var i;
+for (i = 1; i < 11; i++) 
+{
+  if (i === 5) 
+  { 
+      continue; 
+  }
+  v += "Number is " + i + "<br>";
+}
+document.getElementById("js").innerHTML = v;
+</script>
+</body>
+</html>
