@@ -1,0 +1,14 @@
+/*Javascript code practiced on 24/04/2020 on Regular Expression object*/
+/*Program on regular expression using exec()*/
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Regular Expressions</h2>
+<p id="js"></p>
+<script>
+var v = /i/.exec("Prabhanjan is a good boy.");
+document.getElementById("js").innerHTML =
+"Found '" + v[0] + "' in position " + v.index + " in the string: " + v.input;
+</script>
+</body>
+</html>

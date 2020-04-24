@@ -1,0 +1,15 @@
+/*Javascript code practiced on 24/04/2020 on bitwise operator*/
+/*Program to convert decimal to binary*/
+<!DOCTYPE html>
+<html>
+<body>
+<p id="js"></p>
+<script>
+document.getElementById("js").innerHTML = "-5 is converted to binary = " + DecToBin(-5);
+function DecToBin(d)
+{
+  return (d >>> 0).toString(2);
+}
+</script>
+</body>
+</html>
