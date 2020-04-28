@@ -1,0 +1,19 @@
+/*Javascript code practiced on 28/04/2020 on Scope*/
+/*Program on local variaables*/
+<!DOCTYPE html>
+<html>
+<body>
+<h3>JavaScript Scope</h3>
+<p id="js1"></p>
+<p id="js2"></p>
+<script>
+fun();
+function fun()
+{
+  var Name = "Prabhu";
+  document.getElementById("js1").innerHTML =  Name + " is " + typeof Name;
+}
+document.getElementById("js2").innerHTML = typeof Name;
+</script>
+</body>
+</html>
