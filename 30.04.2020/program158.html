@@ -1,0 +1,19 @@
+/*Javascript code practiced on 28/04/2020 on const keyword*/
+/*Program on const used as block scope.*/
+<!DOCTYPE html>
+<html>
+<body>
+<h3>Declaring a Variable Using const</h3>
+<p id="js"></p>
+<script>
+var  y = 10;
+// Here y is 10
+{  
+  const y = 2;
+  // Here y is 2
+}
+// Here y is 10
+document.getElementById("js").innerHTML = y;
+</script>
+</body>
+</html>
