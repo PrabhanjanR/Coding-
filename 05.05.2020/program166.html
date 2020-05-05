@@ -1,0 +1,24 @@
+/*Javascript code practiced on 04/05/2020 on class.*/
+/*Program on creating the method.*/
+<!DOCTYPE html>
+<html>
+<body>
+<h3>JavaScript Class Method</h3>
+<p id="js"></p>
+<script>
+class person 
+{
+  constructor(n)
+  {
+    this.name = n;
+  }
+  print()
+  {
+    return "My name is " + this.name;
+  }
+}
+MyName = new person("Prabhanjan");
+document.getElementById("js").innerHTML = MyName.print();
+</script>
+</body>
+</html>

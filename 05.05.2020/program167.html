@@ -1,0 +1,25 @@
+/*Javascript code practiced on 04/05/2020 on class.*/
+/*Program on static methods.*/
+<!DOCTYPE html>
+<html>
+<body>
+<h3>JavaScript Class Static Methods</h3>
+<p id="js"></p>
+<script>
+class Company
+{
+  constructor(str) 
+  {
+    this.CompanyName = str;
+  }
+  static hello() 
+  {
+    return "Hello!!";
+  }
+}
+myCompany = new Company("LGSI");
+document.getElementById("js").innerHTML = Company.hello();
+//document.getElementById("js").innerHTML = myCompany.hello();
+</script>
+</body>
+</html>
