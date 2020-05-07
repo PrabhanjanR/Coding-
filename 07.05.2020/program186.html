@@ -1,0 +1,27 @@
+/*Javascript code practiced on 07/05/2020 on JS forms.*/
+/*Program on rangeunderflow() property.*/
+<!DOCTYPE html>
+<html>
+<body>
+<p>Enter a number and click OK:</p>
+<input id="id" type="number" min="100">
+<button onclick="fun()">OK</button>
+<p>If the number is less than 100 (the input's min attribute), an error message will be displayed.</p>
+<p id="js"></p>
+<script>
+function fun() 
+{
+  var x = "";
+  if (document.getElementById("id").validity.rangeUnderflow) 
+  {
+    x = "Value too small";
+  } 
+  else 
+  {
+    x = "Input OK";
+  } 
+  document.getElementById("js").innerHTML = x;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+/*Javascript code practiced on 07/05/2020 on JS forms.*/
+/*Program on javascript form validation.*/
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function val() 
+{
+  var x = document.forms["myForm"]["Fname"].value;
+  if (x == "") 
+  {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+<form name="myForm" action="/action_page.php" onsubmit="return val()" method="post">
+  Name: <input type="text" name="FName">
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+/*Javascript code practiced on 07/05/2020 on JS forms.*/
+/*Program on javascript form validate for numbers.*/
+<!DOCTYPE html>
+<html>
+<body>
+<h3>JavaScript Can Validate Input</h3>
+<p>Please input a number between 1 and 10:</p>
+<input id="numb">
+<button type="button" onclick="fun()">Submit</button>
+<p id="demo"></p>
+<script>
+function fun() 
+{
+  var x, y;
+  // Get the value of the input field with id="numb"
+  x = document.getElementById("numb").value;
+  // If x is Not a Number or less than one or greater than 10
+  if (isNaN(x) || x < 1 || x > 10) 
+  {
+    y = "Input not valid";
+  } 
+  else 
+  {
+    y = "Input OK";
+  }
+  document.getElementById("demo").innerHTML = y;
+}
+</script>
+</body>
+</html> 

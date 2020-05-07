@@ -1,0 +1,26 @@
+/*Javascript code practiced on 07/05/2020 on JS forms.*/
+/*Program for checkValidity() method.*/
+<!DOCTYPE html>
+<html>
+<body>
+<p>Enter a number and click OK:</p>
+<input id="id" type="number" min="100" max="300" required>
+<button onclick="fun()">OK</button>
+<p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
+<p id="js"></p>
+<script>
+function fun() 
+{
+  var inpObj = document.getElementById("id");
+  if (!inpObj.checkValidity()) 
+  {
+    document.getElementById("js").innerHTML = inpObj.validationMessage;
+  } 
+  else 
+  {
+    document.getElementById("js").innerHTML = "Input OK";
+  } 
+} 
+</script>
+</body>
+</html>

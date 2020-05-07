@@ -1,0 +1,18 @@
+/*Javascript code practiced on 07/05/2020 on mistakes while programming.*/
+/*Program on creating object from json string.*/
+<!DOCTYPE html>
+<html>
+<body>
+<h3>Create Object from JSON String</h3>
+<p id="js"></p>
+<script>
+var v = '{"employees":[' +
+    '{"fName":"Prabhanjan","lName":"Ramakrishnaiah" },' +
+    '{"fName":"Saravana","lName":"Kumar" },' +
+    '{"fName":"Riya","lName":"vijayan" }]}';
+x = JSON.parse(v);
+document.getElementById("js").innerHTML =
+x.employees[1].fName + " " + x.employees[1].lName;
+</script>
+</body>
+</html>
