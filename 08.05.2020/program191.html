@@ -1,0 +1,21 @@
+/*Javascript code practiced on 07/05/2020 on JS objects.*/
+/*Program on delete object property.*/
+<!DOCTYPE html>
+<html>
+<body>
+<p>JavaScript object properties.</p>
+<p id="js"></p>
+<script>
+var person = 
+{
+  fname:"Prabhanjan",
+  lname:"Ramakrishnaiah",
+  age:23,
+  company:"LGSI"
+};
+delete person.age;
+document.getElementById("js").innerHTML =
+person.fname + " is " + person.age + " years old.";
+</script>
+</body>
+</html>

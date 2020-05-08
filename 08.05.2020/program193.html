@@ -1,0 +1,21 @@
+/*Javascript code practiced on 07/05/2020 on JS objects.*/
+/*Program on creating and using an object method.*/
+<!DOCTYPE html>
+<html>
+<body>
+<p>Creating and using an object method.</p>
+<p id="js"></p>
+<script>
+var person = {
+  fName: "Prabhanjan",
+  lName : "Ramakrishnaiah",
+  age     : 23,
+  fullName : function() 
+  {
+    return this.fName + " " + this.lName;
+  }
+};
+document.getElementById("js").innerHTML = person.fullName();
+</script>
+</body>
+</html>

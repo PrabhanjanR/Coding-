@@ -1,0 +1,19 @@
+/*Javascript code practiced on 07/05/2020 on JS objects.*/
+/*Program on object properties.*/
+<!DOCTYPE html>
+<html>
+<body>
+<p>JavaScript Object Properties</p>
+<p id="js"></p>
+<script>
+var x = "";
+var person = {fname:"Prabhanjan", lname:"Ramakrishnaiah", age:23}; 
+var v;
+for (v in person) 
+{
+  x += person[v] + " ";
+}
+document.getElementById("js").innerHTML = x;
+</script>
+</body>
+</html>

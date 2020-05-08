@@ -1,0 +1,22 @@
+/*Javascript code practiced on 07/05/2020 on JS objects.*/
+/*Program on object method.*/
+<!DOCTYPE html>
+<html>
+<body>
+<p>An object method is a function definition stored as a property value.</p>
+<p id="js"></p>
+<script>
+var person = 
+{
+  fName: "Prabhanjan",
+  lName : "Ramkarishnaiah",
+  age     : 23,
+  fullName : function() 
+  {
+    return this.fName + " " + this.lName;
+  }
+};
+document.getElementById("js").innerHTML = person.fullName;
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+/*Javascript code practiced on 07/05/2020 on JS objects.*/
+/*Program on using objects as mutable.*/
+<!DOCTYPE html>
+<html>
+<body>
+<p>JavaScript objects are mutable.</p>
+<p id="js"></p>
+<script>
+var person = {Name:"Prabhanjan", Age:23, company:"LGSI"}
+var x = person;
+x.age = 10;
+document.getElementById("js").innerHTML =
+person.Name + " is " + person.Age + " years old.";
+</script>
+</body>
+</html>
