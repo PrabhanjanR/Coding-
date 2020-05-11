@@ -1,0 +1,28 @@
+/*Javascript code practiced on 11/05/2020 on JS objects.*/
+/*Program on object.defineProperty().*/
+<!DOCTYPE html>
+<html>
+<body>
+<h5>JavaScript Getters and Setters foor creating counter</h5>
+<p id="js"></p>
+<script>
+var obj = {count : 0};
+Object.defineProperty(obj, "reset", 
+    { get : function () { this.count = 0;} });
+Object.defineProperty(obj, "inc", 
+    { get : function () { this.count++;} });
+Object.defineProperty(obj, "dec", 
+    { get : function () { this.count--;} });
+Object.defineProperty(obj, "add", 
+    { set : function (value) { this.count += value;} });
+Object.defineProperty(obj, "sub", 
+    { set : function (value) { this.count -= value;} });
+obj.reset;
+obj.add = 5;
+obj.sub = 1;
+obj.inc;
+obj.dec;
+document.getElementById("js").innerHTML = obj.count;
+</script>
+</body>
+</html>

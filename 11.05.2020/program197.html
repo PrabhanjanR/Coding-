@@ -1,0 +1,22 @@
+/*Javascript code practiced on 11/05/2020 on JS object accessors.*/
+/*Program on object setter.*/
+<!DOCTYPE html>
+<html>
+<body>
+<h5>JavaScript Setters</h5>
+<p id="js"></p>
+<script>
+var person = {
+  Name: "Prabhanjan",
+  age : 23,
+  language : "NO",
+  set lang(lan) 
+  {
+    this.language = lan;
+  }
+};
+person.lang = "kannada";
+document.getElementById("js").innerHTML = person.language;
+</script>
+</body>
+</html>

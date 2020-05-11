@@ -1,0 +1,21 @@
+/*Javascript code practiced on 11/05/2020 on JS object accessors.*/
+/*Program on object getter(get keyword).*/
+<!DOCTYPE html>
+<html>
+<body>
+<h5>JavaScript Getters</h5>
+<p id="js"></p>
+<script>
+var person = {
+  Name: "Prabhanjan",
+  age : 23,
+  language : "kannada",
+  get lan() 
+  {
+    return this.language;
+  }
+};
+document.getElementById("js").innerHTML = person.lan;
+</script>
+</body>
+</html>

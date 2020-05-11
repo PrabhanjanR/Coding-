@@ -1,0 +1,23 @@
+/*Javascript code practiced on 11/05/2020 on JS objects.*/
+/*Program on adding a method to a constructor.*/
+<!DOCTYPE html>
+<html>
+<body>
+<h5>JavaScript Object Constructors</h5>
+<p id="js"></p>
+<script>
+function Person(first, age, job) {
+  this.Name1 = first;
+  this.age1 = age;
+  this.Company = job;
+  this.name = function() 
+  {
+    return this.Name1
+  };
+}
+var myFather = new Person("Ramakrishnaiah", 65, "Teacher");
+document.getElementById("js").innerHTML =
+    "My father Name is " + myFather.name(); 
+</script>
+</body>
+</html>
